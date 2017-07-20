@@ -1,0 +1,25 @@
+<!ENTITY prefwindow.title "Releases preferences">
+<!ENTITY releasesPrefs.title "Releases preferences">
+<!ENTITY libraryartists.label "Show releases for my artists only">
+<!ENTITY libraryartists.accesskey "h">
+<!ENTITY months.label "Check for releases">
+<!ENTITY months1.label "month">
+<!ENTITY months2.label "months">
+<!ENTITY futuremonths.label2 "in the future (default: 3)">
+<!ENTITY futuremonths.accesskey "C">
+<!ENTITY pastmonths.label2 "in the past (default: 1)">
+<!ENTITY pastmonths.accesskey "h">
+<!ENTITY savesession.label "Save retrieved releases on exit">
+<!ENTITY savesession.accesskey "S">
+<!ENTITY theme.label "Theme">
+<!ENTITY theme1.label "Light">
+<!ENTITY theme2.label "Dark">
+<!ENTITY theme.accesskey "T">
+<!ENTITY compareby.label "Compare using metadata field">
+<!ENTITY compareby1.label "Artist">
+<!ENTITY compareby2.label "Album Artist">
+<!ENTITY compareby3.label "Composer">
+<!ENTITY compareby4.label "All (slowest)">
+<!ENTITY compareby.accesskey "m">
+<!ENTITY options.cancel "Cancel">
+<!ENTITY options.save "Save and Close">

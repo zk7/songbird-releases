@@ -1,0 +1,9 @@
+<!ENTITY releases.top.label "Releases">
+<!ENTITY releases.top.artistlabel "Artist:">
+<!ENTITY releases.top.labellabel "Label:">
+<!ENTITY releases.top.countrylabel "Country:">
+<!ENTITY releases.top.filterbutton "Set Filter">
+<!ENTITY releases.bottom.options "Options">
+<!ENTITY releases.bottom.refreshview "Refresh Current View">
+<!ENTITY releases.bottom.refreshserver "Refresh From Server">
+<!ENTITY releases.bottom.label "Displaying upcoming releases">

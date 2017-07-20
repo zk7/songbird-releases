@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://songbird/content/bindings/bindings.css"
+	type="text/css"?>
+<?xml-stylesheet href="chrome://songbird/skin/songbird.css" type="text/css"?>
+<?xml-stylesheet href="chrome://releases/skin/main.css" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://releases/locale/overlay.dtd">
+
+<page id="rpage"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="init()"
+	onunload="unload()"
+	>
+
+	<stringbundleset id="stringbundleset"> 
+		<stringbundle id="releases-strings"
+			src="chrome://releases/locale/overlay.properties"/>
+	</stringbundleset>
+   
+   <script type="application/x-javascript" src="releases.js" />
+
+	<vbox id="mainbox" pack="end" flex="1">   
+      <hbox id="topbox" align="center" flex="1">
+         <spacer flex="1" />
+         <label id="artistlabel" align="center" value="&releases.top.artistlabel;" />
+         <menulist id="artistlist" flex="7">
+            <menupopup id="artistpopup">
+            </menupopup>
+         </menulist>
+         <spacer flex="1" />
+         <label id="labellabel" align="center" value="&releases.top.labellabel;" />
+         <menulist id="labellist" flex="7">
+            <menupopup id="labelpopup">
+            </menupopup>
+         </menulist>
+         <spacer flex="1" />
+         <label id="countrylabel" align="center" value="&releases.top.countrylabel;" />
+         <menulist id="countrylist" flex="7">
+            <menupopup id="countrypopup">
+            </menupopup>
+         </menulist>
+         <spacer flex="1" />
+         <button label="&releases.top.filterbutton;" oncommand="setFilters();" />
+         <spacer flex="1" />
+      </hbox>
+      
+      <box id="midbox" flex="100">         
+			<iframe id="release-listings" flex="1"
+				src="chrome://releases/content/listing.html" />
+      </box>
+      
+      <box id="bottombox" align="center" flex="1">  
+         <spacer flex="1" />
+         <label id="bottomlabel" value="&releases.bottom.label;" />
+         <spacer flex="9" />
+         <progressmeter id="progress" mode="undetermined" value="0" />
+         <spacer flex="1" />
+         <button label="&releases.bottom.options;" oncommand="openOptions();" />
+         <button label="&releases.bottom.refreshview;" oncommand="init();" />
+         <button label="&releases.bottom.refreshserver;" oncommand="resetDB(); init();"/>    
+         <spacer flex="1" />
+      </box>
+   </vbox>
+   
+</page>

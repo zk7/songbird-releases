@@ -1,0 +1,21 @@
+/* Stylesheet for main window */
+#progress {
+   visibility:hidden;
+   text-align:center;
+}
+
+#topbox {
+   border-bottom: 1px solid #999;
+}
+
+#midbox {
+   background: white;
+}
+
+#bottombox {
+   border-top: 1px solid #999;
+}
+
+#bottomlabel {
+   font-size: 9px;
+}

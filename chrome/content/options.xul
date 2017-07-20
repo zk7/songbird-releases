@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://releases/locale/options.dtd">
+<!-- OPTIONS WINDOW - Specified in install.rdf, launched from the Extension Manager -->
+<window id="releasesPreferences" 
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+   title="&prefwindow.title;"
+   onload="ReleasesOptions.init();">
+   
+  <prefpane id="releasesPrefs" label="&releasesPrefs.title;" width="350px">
+  
+  <script type="text/javascript" src="chrome://releases/content/options.js"/>
+  
+    <preferences>
+      <preference id="savesession" name="extensions.releases.savesession" type="bool"/>
+      <preference id="libraryartists" name="extensions.releases.libraryartists" type="bool"/>
+      <preference id="futuremonths" name="extensions.releases.futuremonths" type="int"/>
+    </preferences>
+    
+    <vbox>
+       <checkbox id="checksavesession" preference="savesession" label="&savesession.label;" accesskey="&savesession.accesskey;"/>
+       <checkbox id="checklibraryartists" preference="libraryartists" label="&libraryartists.label;" accesskey="&libraryartists.accesskey;"/>
+       <separator/>
+       <hbox align="center">
+          <label align="center" accesskey="&futuremonths.accesskey;" control="menufuturemonths">&months.label;</label>
+          <menulist align="center" id="menufuturemonths" width="80px">
+            <menupopup>
+               <menuitem label="1 &months1.label;" value="1" />
+               <menuitem label="2 &months2.label;" value="2" />
+               <menuitem label="3 &months2.label;" value="3 "/>
+               <menuitem label="4 &months2.label;" value="4" />
+               <menuitem label="5 &months2.label;" value="5" />
+            </menupopup>
+         </menulist>
+         <label>&futuremonths.label2;</label>
+      </hbox>
+      <!--
+      <hbox align="center">
+         <checkbox id="checkenablepast" preference="enablepast" label="&months.label;" accesskey="&pastmonths.accesskey;"/>
+         <menulist align="center" id="menupastmonths" width="80px">
+            <menupopup>
+               <menuitem label="1 &months1.label;" value="1" />
+               <menuitem label="2 &months2.label;" value="2" />
+               <menuitem label="3 &months2.label;" value="3 "/>
+            </menupopup>
+         </menulist>
+         <label>&pastmonths.label2;</label>
+      </hbox>
+      -->
+      <hbox align="center">
+         <label accesskey="&compareby.accesskey;" control="menucompareby">&compareby.label;:</label>
+          <menulist id="menucompareby" width="150px">
+            <menupopup>
+               <menuitem label="&compareby1.label;" value="1" />
+               <menuitem label="&compareby2.label;" value="2" />
+               <menuitem label="&compareby3.label;" value="3" />
+               <menuitem label="&compareby4.label;" value="4" />
+            </menupopup>
+         </menulist>
+      </hbox>
+      <hbox align="center">
+         <label accesskey="&theme.accesskey;" control="menutheme">&theme.label;:</label>
+          <menulist id="menutheme" width="100px">
+            <menupopup>
+               <menuitem label="&theme1.label;" value="1" />
+               <menuitem label="&theme2.label;" value="2" />
+            </menupopup>
+         </menulist>
+      </hbox>
+   </vbox>
+   
+   <hbox pack="end">
+		<button label="&options.save;" oncommand="ReleasesOptions.save()"/>
+	</hbox>
+  </prefpane>
+</window>

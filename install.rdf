@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+     xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>releases@songbirdnest.com</em:id>
+    <em:type>2</em:type>
+    <em:name>Releases</em:name>
+    <em:version>0.6.9</em:version>
+    <em:creator>zk7</em:creator>
+
+
+    <em:description>Upcoming releases by artists in your library.</em:description>
+    <em:iconURL>chrome://releases/skin/options-icon.png</em:iconURL>
+	 <em:homepageURL>http://addons.songbirdnest.com/addon/1563</em:homepageURL>
+    <em:optionsURL>chrome://releases/content/options.xul</em:optionsURL>
+
+
+
+    <em:targetApplication>
+      <Description>
+        <em:id>songbird@songbirdnest.com</em:id>
+        <em:minVersion>1.2.0</em:minVersion>
+        <em:maxVersion>1.3.0a</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+
+
+
+
+
+
+  </Description>
+</RDF>

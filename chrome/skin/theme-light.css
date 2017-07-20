@@ -1,0 +1,87 @@
+/*Stylesheet for light theme */
+/***Global styles*********/
+.global {
+   font-family: arial, sans-serif;
+   font-size: 12px;
+   color: black;
+   background-color: #fff;
+}
+
+a:link {
+   text-decoration: none;
+   color: black;
+   border:none;
+}
+
+a:hover{
+   color: #666666;
+   border:none;
+}
+
+a:visited{
+   color: black;
+   text-decoration: none;
+   border:none;
+}
+
+img{
+   border:none;
+}
+
+#sortabletable {
+   width: 100%; 
+}
+/**Table header **/
+.sortable thead {
+    border-style: outset;
+    border-width: 2px;
+    border-color: #000;
+    text-align: center;
+    background-color:#dddddd;
+    font-weight: bold;
+}
+/**************Column styles***************/
+.date {
+   width:10%;
+   text-align:center;
+}
+
+.artist {
+   width:20%;
+   text-align:center;
+}
+
+.release {
+   width:42%;
+   padding-left: 10px;
+   text-align:left;
+}
+
+.label {
+   width:15%;
+   text-align:center;
+}
+
+.country {
+   width:13%;
+   text-align:center;
+}
+/********************************************/
+/***Release type and track information and gcal link**/
+.addInfo {
+   font-size: 9px;
+   padding-left: 10px;
+}
+.gcalLink {
+   font-size: 9px;
+   float: right;
+   text-align: right;
+}
+/**Odd and even row style **/
+.odd {
+   background-color: #eeeeee;
+}
+
+.even {
+  background-color: #fff;
+}
